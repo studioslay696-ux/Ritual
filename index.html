@@ -1384,19 +1384,19 @@ const AI = (() => {
   /* -----------------------------------------------------------
      CONFIGURATION — SEUL AI_CONFIG.apiKey EST A REMPLIR
   ----------------------------------------------------------- */
-  const AI_CONFIG = {
-    apiKey:      '',                    // ← COLLEZ VOTRE CLE STEPFUN ICI
-    endpoint:    'https://patient-block-7109.studio-slay696.workers.dev',
-    model:       'step-3.5-flash',
-    maxTokens:   800,
-    temperature: 0.6,
-    enabled:     true,                 // Passe automatiquement a true via applyApiKey()
-    systemPrompt: `Tu es un coach d'habitudes bienveillant, precis et motivant.
+const AI_CONFIG = {
+  apiKey: '',
+  endpoint: 'https://patient-block-7109.studio-slay696.workers.dev',
+  model: 'step-3.5-flash',
+  maxTokens: 800,
+  temperature: 0.6,
+  enabled: true,
+  systemPrompt: `Tu es un coach d'habitudes bienveillant, precis et motivant.
 Tu analyses des donnees d'habitudes et fournis des conseils personnalises, actionnables et concis.
 Reponds toujours en francais.
-Limite tes reponses a 4-6 phrases maximum, sauf si un format structure est explicitement demande.
+Limite tes reponses a 4-6 phrases maximum.
 Ne commence jamais par "Bien sur" ou "Absolument".`
-  };
+};
 
   let isOpen = false;
 
